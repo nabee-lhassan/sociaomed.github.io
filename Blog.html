@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link style sheet -->
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- bootstrao cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- slick slider css link -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick/slick-theme.css" />
+
+    <!-- fancy box -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container my-nav-container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 for-responcive-1 col-sm-6 for-flex">
+                        <a class="navbar-brand" href="./index.html">Logo Here</a>
+                        
+
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-6 for-responcive for-flex">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+
+                                <li class="nav-item ">
+                                    <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                                </li>
+
+
+                                <div class="div-my-costum-dropdown">
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="#">Movie</a>
+                                    </li>
+                                    <ul class="drop-ul ">
+                                        <li><a href="./AllMovie.html">All Movies</a></li>
+                                        <li><a href="./MovieDetails.html">Movies Details</a></li>
+
+
+
+                                    </ul>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./tv-show.html">Tv Show</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Games.html">Games</a>
+                                </li>
+                                <div class="div-my-costum-dropdown">
+                                    <li class="nav-item ">
+                                        <a class="nav-link active" href="#">Blog</a>
+                                    </li>
+                                    <ul class="drop-ul ">
+                                        <li><a href="./Blog.html">Our Blog</a></li>
+                                        <li><a href="./BlogDetails.html">Blog Details</a></li>
+
+
+                                    </ul>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contactus.html">Contact us</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-4 for-responcive-2 for-flex ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+
+
+                        <div class="dropdown">
+                            <span class="span-svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-globe2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                                </svg>
+                            </span>
+                            <select id="lang-dropdown">
+                                <option value="">En</option>
+                            </select>
+
+
+
+
+                        </div>
+                        <a class="sign" href="">Sign Up</a>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <section class="breadcrumb-area breadcrumb-bg breadcrumb-spacing ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="breadcrumb-content text-center">
+                        <h2 class="title">Blog</h2>
+                        <nav aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs">
+                            <ul class="breadcrumb" itemscope="" itemtype="">
+                                <li itemprop="itemListElement" itemscope="" itemtype=""
+                                    class="breadcrumb-item trail-begin"><a href="./index.html" rel="home"
+                                        itemprop="item"><span itemprop="name">Home</span></a>
+                                    <meta itemprop="position" content="1">
+                                </li>
+                                <li class="breadcrumb-item trail-end"><span>Blog</span></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-area blog-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 blog-post-items blog-padding">
+                    <header>
+                        <h1 class="page-title screen-reader-text"></h1>
+                    </header>
+
+
+
+
+                    <article id="post-55"
+                        class="blog-post-item format-image post-55 post type-post status-publish format-standard has-post-thumbnail hentry category-action-movies category-horror category-movies tag-blending tag-creative tag-movies tag-news">
+                        <div class="blog-post-thumb">
+                            <a href="#">
+                                <img width="857" height="480" src="./image/blog_thumb01.jpg" class="img-responsive wp-post-image" alt=""
+                                    decoding="async" srcset=""> </a>
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="date"><i class="far fa-clock"></i> August 8, 2022</span>
+                            <h2 class="title">
+                                <a href="#">Where watch English movies free?</a>
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typetting industry. Lorem Ipsum has
+                                been the industry’s standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                only five centuies, but also the leap into […]</p>
+                            <div class="blog-post-meta">
+                                <ul>
+                                    <li><i class="far fa-user"></i><a href=""> admin</a></li>
+
+                                    <li class="tags"><i class="far fa-bookmark"></i>
+                                        <a class="cat-item" href="">
+                                            Action Movies
+                                        </a>, <a class="cat-item" href="">
+                                            Horror
+                                        </a>
+                                    </li>
+
+                                    <li><i class="far fa-comments"></i><a href="">No Comments</a></li>
+
+                                </ul>
+
+                                <!-- blog btn -->
+
+                                <div class="read-more">
+                                    <a href="">Read More<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+
+
+
+                    <article id="post-53"
+                        class="blog-post-item format-image post-53 post type-post status-publish format-standard has-post-thumbnail hentry category-action-movies category-horror category-streaming tag-creative tag-movies tag-news tag-online">
+                        <div class="blog-post-thumb">
+                            <a href="">
+                                <img width="857" height="480" src="./image/blog_thumb02.jpg" class="img-responsive wp-post-image" alt=""
+                                    decoding="async" loading="lazy" srcset=""> </a>
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="date"><i class="far fa-clock"></i> August 8, 2022</span>
+                            <h2 class="title">
+                                <a href="#">Your Free Movie Streaming Purposes</a>
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typetting industry. Lorem Ipsum has
+                                been the industry’s standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                only five centuies, but also the leap into […]</p>
+                            <div class="blog-post-meta">
+                                <ul>
+                                    <li><i class="far fa-user"></i><a href=""> admin</a></li>
+
+                                    <li class="tags"><i class="far fa-bookmark"></i>
+                                        <a class="cat-item" href="">
+                                            Action Movies
+                                        </a>, <a class="cat-item" href="">
+                                            Horror
+                                        </a>
+                                    </li>
+
+                                    <li><i class="far fa-comments"></i><a href="">No Comments</a></li>
+
+                                </ul>
+
+                                <!-- blog btn -->
+
+                                <div class="read-more">
+                                    <a href="">Read More<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+
+
+
+                    <article id="post-61"
+                        class="blog-post-item format-image post-61 post type-post status-publish format-standard has-post-thumbnail hentry category-action-movies category-download category-horror category-movies category-streaming tag-creative tag-english tag-movies tag-news">
+                        <div class="blog-post-thumb">
+                            <a href="">
+                                <img width="857" height="480" src="./image/blog_thumb06.jpg" class="img-responsive wp-post-image" alt=""
+                                    decoding="async" loading="lazy" srcset="" sizes=""> </a>
+                        </div>
+                        <div class="blog-post-content">
+                            <span class="date"><i class="far fa-clock"></i> August 8, 2022</span>
+                            <h2 class="title">
+                                <a href="">Automatically transcribe movie video</a>
+                            </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typetting industry. Lorem Ipsum has
+                                been the industry’s standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of type and scrambled it to make a type specimen book. It has survived not
+                                only five centuies, but also the leap into […]</p>
+                            <div class="blog-post-meta">
+                                <ul>
+                                    <li><i class="far fa-user"></i><a href=""> admin</a></li>
+
+                                    <li class="tags"><i class="far fa-bookmark"></i>
+                                        <a class="cat-item" href="">
+                                            Action Movies
+                                        </a>, <a class="cat-item" href="">
+                                            Download
+                                        </a>
+                                    </li>
+
+                                    <li><i class="far fa-comments"></i><a href="#respond">No Comments</a></li>
+
+                                </ul>
+
+                                <!-- blog btn -->
+
+                                <div class="read-more">
+                                    <a href="">Read More<i class="fas fa-angle-double-right"></i></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <div class="pagination-wrap mt-10">
+                        <ul>
+                            <li><span aria-current="page" class="page-numbers current">1</span></li>
+                            <li><a class="page-numbers" href="">2</a></li>
+                            <li><a class="next page-numbers" href="">Next</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="blog-sidebar">
+
+                        <div id="search-2" class="widget blog-widget widget_search">
+                            <div class="widget-title mb-30">
+                                <h4 class="title">Search Objects</h4>
+                            </div>
+                            <div class="sidebar__widget-px">
+                                <div class="search-px sidebar-search">
+                                    <form action="#" method="get">
+                                        <input type="text" value="" required="" name="s" placeholder="Search">
+                                        <button type="submit"> <i class="fas fa-search"></i> </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="categories-2" class="widget blog-widget widget_categories">
+                            <div class="widget-title mb-30">
+                                <h4 class="title">Categories</h4>
+                            </div>
+                            <ul>
+                                <li class="cat-item cat-item-2"><a href="">Action Movies</a> (5)
+                                </li>
+                                <li class="cat-item cat-item-5"><a href="">Download</a> (3)
+                                </li>
+                                <li class="cat-item cat-item-6"><a href="">Horror</a> (5)
+                                </li>
+                                <li class="cat-item cat-item-4"><a href="">Movies</a> (4)
+                                </li>
+                                <li class="cat-item cat-item-3"><a href="">Streaming</a> (4)
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div id="beyond-latest-posts-2" class="widget blog-widget widget_beyond-latest-posts">
+                            <div class="widget-title mb-30">
+                                <h4 class="title"> Recent Posts </h4>
+                            </div>
+                            <div class="sidebar__widget-content">
+                                <div class="rc-post-list">
+                                    <div class="rc-post-item">
+                                        <div class="thumb">
+                                            <a href="">
+                                                <div class="sidebar-posts-bg-thumb post-1">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title"><a
+                                                    href="">Where
+                                                    watch English movies free?</a></h5>
+                                            <span class="date"><i class="far fa-clock"></i>August 08, 2022 </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="rc-post-item">
+                                        <div class="thumb">
+                                            <a href="">
+                                                <div class="sidebar-posts-bg-thumb post-2"
+>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title"><a href="">Your Free Movie Streaming Purposes</a></h5>
+                                            <span class="date"><i class="far fa-clock"></i>August 08, 2022 </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="rc-post-item">
+                                        <div class="thumb">
+                                            <a href="">
+                                                <div class="sidebar-posts-bg-thumb post-3">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title"><a href="">Automatically transcribe movie video</a></h5>
+                                            <span class="date"><i class="far fa-clock"></i>August 08, 2022 </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div id="tag_cloud-2" class="widget blog-widget widget_tag_cloud">
+                            <div class="widget-title mb-30">
+                                <h4 class="title">Tag Cloud</h4>
+                            </div>
+                            <div class="tagcloud"><a href=""
+                                    class="tag-cloud-link tag-link-14 tag-link-position-1" style="font-size: 8pt;"
+                                    aria-label="Blending (1 item)">Blending</a>
+                                <a href="" class="tag-cloud-link tag-link-8 tag-link-position-2"
+                                    style="font-size: 22pt;" aria-label="Creative (5 items)">Creative</a>
+                                <a href="" class="tag-cloud-link tag-link-10 tag-link-position-3"
+                                    style="font-size: 16.75pt;" aria-label="English (3 items)">English</a>
+                                <a href="" class="tag-cloud-link tag-link-7 tag-link-position-4"
+                                    style="font-size: 22pt;" aria-label="Movies (5 items)">Movies</a>
+                                <a href="" class="tag-cloud-link tag-link-9 tag-link-position-5"
+                                    style="font-size: 22pt;" aria-label="News (5 items)">News</a>
+                                <a href="" class="tag-cloud-link tag-link-12 tag-link-position-6"
+                                    style="font-size: 8pt;" aria-label="Online (1 item)">Online</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- prefooter start -->
+    <section class="newsletter-area newsletter-bg">
+        <div class="container">
+            <div class="newsletter-inner-wrap">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="newsletter-content">
+                            <h4>Trial Start First 30 Days.</h4>
+                            <p>Enter your email to create or restart your membership.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 input-colum">
+                        <input class="news-input" type="email" name="EMAIL" placeholder="Enter your email" required="">
+                        <input type="submit" class="news-submit" value="get started">
+                    </div>
+                </div><label style="display: none !important;">Leave this field empty if you're human: <input
+                        type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input
+                    type="hidden" name="_mc4wp_timestamp" value="1670008791"><input type="hidden" name="_mc4wp_form_id"
+                    value="233"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
+                <div class="mc4wp-response"></div>
+                </form><!-- / Mailchimp for WordPress Plugin -->
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- prefooter end -->
+
+    <footer>
+
+        <div class="footer-top-wrap" data-bg-color="">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6 footer-col-1">
+                            <div id="custom_html-2" class="widget_text footer-widget widget_custom_html">
+                                <div class="textwidget custom-html-widget">
+                                    <div class="f-logo">
+                                        <a href="#">
+                                            <h1>logo here </h1>
+                                        </a>
+                                    </div>
+                                    <div class="footer-text">
+                                        <p>Movflx Online the relase etras thats sheets continig passag.</p>
+                                        <div class="footer-contact">
+                                            <ul>
+                                                <li><i class="fas fa-map-marker-alt"></i> <span>Address : </span>PO Box
+                                                    W75 Street
+                                                </li>
+                                                <li><i class="fas fa-headphones"></i><span>Phone : </span>+24 1245 654
+                                                    235
+                                                </li>
+                                                <li>
+                                                    <i class="fas fa-envelope-open"></i><span>Email :
+                                                    </span>info@exemple.com
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 footer-col-2">
+                            <div id="categories-3" class="footer-widget widget_categories">
+                                <div class="widget-title mb-30">
+                                    <h4 class="title fw-title">Categories</h4>
+                                </div>
+                                <ul>
+                                    <li class="cat-item cat-item-2"><a href="#">Action Movies</a> <span>(5) </span>
+                                    </li>
+                                    <li class="cat-item cat-item-5"><a href="#">Download</a> (3)
+                                    </li>
+                                    <li class="cat-item cat-item-6"><a href="#">Horror</a> (5)
+                                    </li>
+                                    <li class="cat-item cat-item-4"><a href="#">Movies</a> (4)
+                                    </li>
+                                    <li class="cat-item cat-item-3"><a href="#">Streaming</a> (4)
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-4 footer-col-3">
+                            <div id="beyond-latest-posts-3" class="footer-widget widget_beyond-latest-posts">
+                                <div class="widget-title mb-30">
+                                    <h4 class="title fw-title"> Recent Posts </h4>
+                                </div>
+                                <div class="sidebar__widget-content">
+                                    <div class="rc-post-list">
+                                        <div class="rc-post-item">
+                                            <div class="div-image-post">
+
+                                            </div>
+
+                                            <div class="thumb">
+                                                <a href="#">
+                                                    <div class="sidebar-posts-bg-thumb post-1"></div>
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="title"><a href="#">Where watch English movies free?</a></h5>
+                                                <span class="date"><i class="far fa-clock"></i>August 08, 2022 </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="rc-post-item">
+
+
+                                            <div class="div-image-post-2">
+
+                                            </div>
+
+                                            <div class="thumb">
+                                                <a href="#">
+                                                    <div class="sidebar-posts-bg-thumb" data-background=""></div>
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <h5 class="title"><a href="#">Your Free Movie Streaming Purposes</a>
+                                                </h5>
+                                                <span class="date"><i class="far fa-clock"></i>August 08, 2022 </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-8 footer-col-4">
+                            <div id="custom_html-3" class="widget_text footer-widget widget_custom_html">
+                                <div class="widget-title mb-30">
+                                    <h4 class="title fw-title">Follow Us</h4>
+                                </div>
+                                <div class="textwidget custom-html-widget">
+                                    <div class="footer-social">
+                                        <ul>
+                                            <li class="facbook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="twit"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="print"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                            <li class="linked"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="footer-newsletter">
+                                        <form action="#">
+                                            <input type="text" placeholder="Enter your email" required="">
+                                            <button><i class="fas fa-rocket"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6">
+                        <div class="copyright-text">
+                            <p>Copyright © 2022 All Rights Reserved By Movflx</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="payment-method-img text-center text-md-right">
+                            <img src="./image/card_img.png" alt="img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- fancy box -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- jqyery cdn -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- slick slider  cdn-->
+
+    <script src="./slick/slick/slick.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
